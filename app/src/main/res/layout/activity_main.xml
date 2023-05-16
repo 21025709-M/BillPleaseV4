@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="661dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:text="@string/split_bill_calculator"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/amt_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_TotalAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_amount"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/people_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/split_people"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_people"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/fees_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/additional_fees"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/GST"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textOff="@string/gst_not_included"
+                android:textOn="@string/gst_included"
+                tools:ignore="VisualLintButtonSize" />
+
+            <ToggleButton
+                android:id="@+id/servicefee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOff="@string/service_charge_not_included"
+                android:textOn="@string/service_charge_included"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discount_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/discount_amount_percentage"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_discount"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/payMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/PayNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paynow" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/split"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/go"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/each_pays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</LinearLayout>

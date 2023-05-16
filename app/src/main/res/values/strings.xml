@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bill Please</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="amount">Amount</string>
+    <string name="split_people">Split By</string>
+    <string name="number_of_people">Number of people</string>
+    <string name="discount_amount_percentage">Discount Amount (percentage %)</string>
+    <string name="enter_discount">Enter discount %</string>
+    <string name="reset">Reset</string>
+    <string name="go">Go!</string>
+    <string name="gst">GST</string>
+    <string name="service_fee">Service Charge</string>
+    <string name="gst_not_included">GST not included</string>
+    <string name="gst_included">GST included</string>
+    <string name="service_charge_not_included">Service Charge Not Included</string>
+    <string name="service_charge_included">Service Charge Included</string>
+    <string name="cash">Cash</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="paynow">PayNow</string>
+    <string name="split_bill_calculator">Split Bill Calculator</string>
+    <string name="additional_fees">Additional Fees</string>
+</resources>
